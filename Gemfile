@@ -28,3 +28,8 @@ end
 
 gem 'activeadmin', github: 'activeadmin'
 # gem 'activeadmin', '~>'
+
+ gem 'puma'
+ gem 'kaminari' #ページネーション
+ gem 'faker'    #ダミーデータ生成
+ gem 'jquery-infinite-pages' #infinite scroll
