@@ -61,18 +61,48 @@ show do
   end
 end
 
-# グリッドボタンの実装
+# グリッドボタンの実装---------------
   # index as: :grid do |product|
   #   link_to image_tag(product.image_path), admin_product_path(product)
   # end
+# -----------------------------------
 
 
-
+  show do
+    render 'some_partial'
+    h3 post.title
+    div do
+      simple_format post.body
+      attributes_table do
+      row :title
+        row :image do
+          image_tag ad.image.url
+        end
+      end
+    end
+  end
 
 # テーブルカスタム表示の詳細は以下のページ
 # https://github.com/activeadmin/activeadmin/blob/master/docs/3-index-pages/index-as-table.md
 
+
 end
+
+
+# 下部にあるpowerted表記の削除-------
+# ActiveAdmin.setup do |config|
+#   config.view_factory.footer = M_Footer
+# end
+
+# class M_Footer < ActiveAdmin::Component
+#   def build
+#     super(id: "footer")
+#     para "Copyright #{Date.today.year} Reverb Media Group"
+#   end
+# end
+# -----------------------------------
+
+
 
 # ここまでの手数
 #  1174  rails _4.2.5_ new admin-app --skip-bundle
@@ -98,3 +128,4 @@ end
 #  1194  git add .
 #  1195  git commit -m "table custam"
 #  1196  git push https://github.com/Phaya-nmt/ac-test.git master
+

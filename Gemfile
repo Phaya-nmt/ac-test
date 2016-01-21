@@ -26,6 +26,12 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'jquery-turbolinks'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+end
+
 gem 'activeadmin', github: 'activeadmin'
 # gem 'activeadmin', '~>'
 
@@ -33,3 +39,5 @@ gem 'activeadmin', github: 'activeadmin'
  gem 'kaminari' #ページネーション
  gem 'faker'    #ダミーデータ生成
  gem 'jquery-infinite-pages' #infinite scroll
+ # gem 'livingstyleguide'
+ gem 'xcharts-rails'
