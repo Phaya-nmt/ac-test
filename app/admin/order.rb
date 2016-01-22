@@ -89,7 +89,7 @@ end
 end
 
 
-# 下部にあるpowerted表記の削除-------
+#### 下部にあるpowerted表記の削除-------
 # ActiveAdmin.setup do |config|
 #   config.view_factory.footer = M_Footer
 # end
@@ -97,10 +97,10 @@ end
 # class M_Footer < ActiveAdmin::Component
 #   def build
 #     super(id: "footer")
-#     para "Copyright #{Date.today.year} Reverb Media Group"
+#     para "Copyright #{Date.today.year} あああああああああああ！！！"
 #   end
 # end
-# -----------------------------------
+#### -----------------------------------
 
 
 

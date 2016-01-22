@@ -267,3 +267,11 @@ ActiveAdmin.setup do |config|
   #
   # config.include_default_association_filters = true
 end
+
+
+
+# Load filepicker.js before all the other stuff
+# current_javascripts = config.javascripts.clone
+# config.clear_javascripts!
+# config.register_javascript '//api.filepicker.io/v1/filepicker.js'
+# current_javascripts.each{ |j| config.register_javascript j }
